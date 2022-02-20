@@ -1,10 +1,13 @@
 export default function staticProps({ posts }) {
   return (
-    <ul>
-      {posts.map((post) => (
-        <li key={post.title}>{post.title}</li>
-      ))}
-    </ul>
+    <>
+      <div>Got static HTML page using getStaticProps feature</div>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.title}>{post.title}</li>
+        ))}
+      </ul>
+    </>
   );
 }
 

@@ -23,8 +23,6 @@ The HTML is generated on each request.
 - ISR using `revalidate`
 - ISR on-demand revalidation using `unstable_revalidate`
 
-## getStaticPaths
-
 ## getServerSideProps
 
 **Use getStaticPaths when:**
@@ -40,3 +38,5 @@ The HTML is generated on each request.
 - `next build` for Pages included in paths
 - getStaticPaths runs on-demand in the background when using fallback: true
 - getStaticPaths runs on-demand blocking rendering when using fallback: blocking
+
+## getStaticPaths

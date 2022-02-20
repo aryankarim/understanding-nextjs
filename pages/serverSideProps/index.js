@@ -1,8 +1,12 @@
+import Link from "next/link";
+
 export default function serverSideProps({ posts }) {
   return (
     <ul>
       {posts.map((post) => (
-        <li key={post.title}>{post.title}</li>
+        <li key={post.title}>
+          <Link href={"/serverSideProps/" + post.id}>{post.title}</Link>
+        </li>
       ))}
     </ul>
   );

@@ -25,6 +25,15 @@ The HTML is generated on each request.
 
 ## getServerSideProps
 
+**Use getServerSideProps when:**
+
+- The data is frequently changing
+- The data must be fetched at request time
+
+**getStaticProps will execute during:**
+
+- every client request
+
 ## getStaticPaths
 
 **Use getStaticPaths when:**
@@ -40,3 +49,7 @@ The HTML is generated on each request.
 - `next build` for Pages included in paths
 - getStaticPaths runs on-demand in the background when using fallback: true
 - getStaticPaths runs on-demand blocking rendering when using fallback: blocking
+
+## Client Side Fetching
+
+Use SWR (stale while revalidate) library when SEO is not relevant.

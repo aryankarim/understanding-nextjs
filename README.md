@@ -25,6 +25,8 @@ The HTML is generated on each request.
 
 ## getServerSideProps
 
+## getStaticPaths
+
 **Use getStaticPaths when:**
 
 - The data comes from a headless CMS
@@ -38,5 +40,3 @@ The HTML is generated on each request.
 - `next build` for Pages included in paths
 - getStaticPaths runs on-demand in the background when using fallback: true
 - getStaticPaths runs on-demand blocking rendering when using fallback: blocking
-
-## getStaticPaths

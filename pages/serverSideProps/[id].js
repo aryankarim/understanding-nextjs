@@ -1,6 +1,7 @@
-export default function Id({ post }) {
+export default function Post({ post }) {
   return (
     <div>
+      <span>Post Title: </span>
       <h1>{post.title}</h1>
     </div>
   );
